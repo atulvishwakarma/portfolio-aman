@@ -1,22 +1,44 @@
 import React from "react";
-import Footer from "../Footer";
-import Header from "../Header";
-import Home from "../home/Home";
-import DarkMode from "../thememode/DarkMode";
+import Footer from "../footer/Footer";
+import Header from "../header/Header";
+
+import { Routes, Route, useLocation } from "react-router-dom";
+import {
+  Address,
+  Business,
+  Contact,
+  Gallery,
+  Home,
+  JobInfo,
+  Profile,
+  SocialMedia,
+} from "../pages";
+import Breadcrumbs from "../breadcrumbs/Breadcrumbs";
 
 const Layout = () => {
+  const isHomePage = useLocation();
+  var isHome = false;
+if(isHomePage.pathname !=='/'){
+  isHome = true;
+}
+console.log(isHome);
   return (
     <>
       <Header />
 
-      <main
-        className={`main flex flex-col w-full min-h-[calc(100vh-250px)] pb-4`}
-      >
-        <Home />
-        <div className="text-5xl font-extrabold ...">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
-            Hello world
-          </span>
+      <main className="main w-full">
+        {isHome && <Breadcrumbs />}
+        <div className={`main-wrapper main flex flex-col w-full justify-center ${isHome?"min-h-[calc(100vh-234px)]":"min-h-[calc(100vh-182px)]"}  pb-4`}>
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="address" element={<Address />} />
+            <Route path="business" element={<Business />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="gallery" element={<Gallery />} />
+            <Route path="JobInfo" element={<JobInfo />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="social-media" element={<SocialMedia />} />
+          </Routes>
         </div>
       </main>
       <Footer />

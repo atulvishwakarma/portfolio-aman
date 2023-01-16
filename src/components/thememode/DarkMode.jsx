@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { MdDarkMode, MdLightMode } from "react-icons/md";
+import {  MdLightMode } from "react-icons/md";
+
+import { BsMoonStarsFill } from "react-icons/bs";
 
 const DarkMode = () => {
   const [isDark, setIsDark] = useState(true);
@@ -28,7 +30,7 @@ const DarkMode = () => {
   }, []);
 
   return (
-    <div className="toggle-theme-wrapper relative">
+    <div className="toggle-theme-wrapper relative duration-300 ease-in-out transition-all">
       <label htmlFor="checkbox" className="cursor-pointer">
         <input
           type="checkbox"
@@ -38,11 +40,11 @@ const DarkMode = () => {
           defaultChecked={isDark}
           className="hidden"
         />
-        <div className="relative w-12 h-6 px-1 rounded-xl border bg-slate-200 border-slate-200 dark:bg-slate-500 dark:border-slate-500 ">
+        <div className="relative w-14 h-7 px-2 rounded-2xl border bg-slate-200 border-slate-200 dark:bg-slate-500 dark:border-slate-500 ">
           {isDark ? (
-            <MdDarkMode className="absolute right-1 top-1/2 -translate-y-2/4 duration-300 ease-in-out transition-all text-fuchsia-400" />
+            <BsMoonStarsFill className="absolute right-2 top-1/2 -translate-y-2/4 duration-300 ease-in-out transition-all text-slate-50" />
           ) : (
-            <MdLightMode className="absolute left-1 top-1/2 -translate-y-2/4 text-slate-400" />
+            <MdLightMode className="absolute left-2 top-1/2 -translate-y-2/4 text-slate-600 duration-300 ease-in-out transition-all" />
           )}
         </div>
       </label>
