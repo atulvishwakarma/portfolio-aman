@@ -1,5 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { amanprofile } from "../../assests";
 import { SocialMediaData } from "../data/SocialMediaData";
 const socialData = SocialMediaData.map((item) => {
@@ -10,8 +8,7 @@ const socialData = SocialMediaData.map((item) => {
       className="social-media--items-item p-4 transition-all ease-in-out hover:shadow-md rounded  dark:hover:shadow-2xl"
     >
       <a
-      href={item.profileurl}
-      
+        href={item.profileurl}
         target="_blank"
         rel="noreferrer"
         className="text-3xl text-white"

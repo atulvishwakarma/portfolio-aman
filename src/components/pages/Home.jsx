@@ -3,7 +3,6 @@ import { amanprofile } from "../../assests";
 
 import { Link } from "react-router-dom";
 import { menuLink } from "../utils/MainLink";
-import ThemeDark from "../thememode/ThemeDark";
 
 function Home() {
   const hLink = menuLink.map((item) => {
