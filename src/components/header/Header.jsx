@@ -47,7 +47,7 @@ const Header = () => {
               <div className="header-menu--close relative my-10">
                 {isMenuOpen && (
                   <button
-                    className="bg-slate-600 btn-menu text-white text-2xl rounded-full shadow-lg w-14 h-14 flex flex-col justify-center align-middle items-center mx-auto hover:shadow-xl hover:scale-125 transition-all"
+                    className="bg-slate-600 btn-menu text-white text-2xl rounded-full shadow-lg w-14 h-14 flex flex-col justify-center align-middle items-center mx-auto hover:shadow-xl hover:scale-110 transition-all"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                   >
                     <RiCloseFill />

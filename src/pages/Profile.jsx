@@ -45,6 +45,15 @@ const Profile = () => {
             <ProfileBioBlock className="parent-info" data={parentInfo} />
             <ProfileBioBlock className="sibling-info" data={siblingInfo} />
           </div>
+          <div className="download-biodata mt-4 text-center">
+          <a
+            download={`amanrai-biodata.jpeg`}
+            href={biodata}
+            className=" text-slate-600 bg-white shadow dark:bg-slate-600 dark:text-slate-400 text-lg px-3 py-1  rounded no-underline hover:shadow-lg dark:hover:text-slate-300 hover:text-slate-700 inline-flex justify-center items-center cursor-pointer"
+          >
+            <MdOutlineCloudDownload className="text-2xl mr-2" />Download Bio Data
+          </a>
+          </div>
         </div>
       </div>
     </div>

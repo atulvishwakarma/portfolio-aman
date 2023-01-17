@@ -9,47 +9,51 @@ const ProfileBioBlock = ({ className, data }) => {
           key={item.id}
           className={`${className}  border border-slate-400 rounded p-2`}
         >
+          
+          <table className="m-0 w-full">
+          <caption>
           <p className="text-2xl font-[500] text-slate-600 dark:text-slate-400 text-center mb-2">
             {item.title}
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-28 inline-block font-[500]">Date of birth </span>
-            <span>{item.dob}</span>
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-28 inline-block font-[500]">Time </span>
-            <span>{item.time}</span>
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-28 inline-block font-[500]">
-              Place of birth{" "}
-            </span>
-            <span>{item.birthplace}</span>
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-28 inline-block font-[500]">Height </span>
-            <span>{item.height}</span>
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-28 inline-block font-[500]">Gotra </span>
-            <span>{item.gotra}</span>
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-28 inline-block font-[500]">Education </span>
-            <span>{item.education}</span>
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-28 inline-block font-[500]">Occupation </span>
-            <span>{item.occupation}</span>
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-28 inline-block font-[500]">Technology </span>
-            <span>{item.Technology}</span>
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-28 inline-block font-[500]">Company </span>
-            <span>{item.company}</span>
-          </p>
+          </p></caption>
+            <tbody>
+              <tr className="text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Date of birth</td>
+                <td className="p-1">{item.dob}</td>
+              </tr>
+              <tr className=" text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Time</td>
+                <td className="p-1">{item.time}</td>
+              </tr>
+              <tr className="text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Place of birth</td>
+                <td className="p-1">{item.birthplace}</td>
+              </tr>
+              <tr className="text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Height</td>
+                <td className="p-1">{item.height}</td>
+              </tr>
+              <tr className="text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Gotra</td>
+                <td className="p-1">{item.gotra}</td>
+              </tr>
+              <tr className="text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Education</td>
+                <td className="p-1">{item.education}</td>
+              </tr>
+              <tr className="text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Occupation</td>
+                <td className="p-1">{item.occupation}</td>
+              </tr>
+              <tr className="text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Technology</td>
+                <td className="p-1">{item.Technology}</td>
+              </tr>
+              <tr className="text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Company</td>
+                <td className="p-1">{item.company}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       );
     });
@@ -61,23 +65,29 @@ const ProfileBioBlock = ({ className, data }) => {
           key={item.id}
           className={`${className} border border-slate-400 rounded p-2`}
         >
+          
+          <table className="m-0 w-full">
+          <caption>
           <p className="text-2xl font-[500] text-slate-600 dark:text-slate-400 text-center mb-2">
             {item.title}
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-28 inline-block font-[500]">Father Name</span>
-            <span>{item.fatherName}</span>
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-28 inline-block font-[500]">Mother Name</span>
-            <span>{item.motherName}</span>
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-28 inline-block font-[500]">
-            Occupation
-            </span>
-            <span>{item.occupation}</span>
-          </p>
+          </p></caption>
+            <tbody>
+              <tr className="text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Father Name</td>
+                <td className="p-1">{item.fatherName}</td>
+              </tr>
+              <tr className=" text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Mother Name</td>
+                <td className="p-1">{item.motherName}</td>
+              </tr>
+              
+              <tr className="text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Occupation</td>
+                <td className="p-1">{item.occupation}</td>
+              </tr>
+              
+            </tbody>
+          </table>
           
         </div>
       );
@@ -90,32 +100,37 @@ const ProfileBioBlock = ({ className, data }) => {
           key={item.id}
           className={`${className}  border border-slate-400 rounded p-2`}
         >
-          <p className="text-2xl font-[500] text-slate-600 dark:text-slate-400 text-center mb-2">
-            {item.title}
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-32 inline-block font-[500]">Younger Bother</span>
-            <span>{item.youngerBother1}</span>
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-32 inline-block font-[500]">Education</span>
-            <span>{item.education1}</span>
-          </p>
           
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-32 inline-block font-[500]">Younger Bother</span>
-            <span>{item.youngerBother2}</span>
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-32 inline-block font-[500]">Education</span>
-            <span>{item.education2}</span>
-          </p>
-          <p className="text-slate-500 dark:text-slate-300 ">
-            <span className="w-32 inline-block font-[500]">
-            Occupation
-            </span>
-            <span>{item.occupation}</span>
-          </p>
+          <table className="m-0 w-full">
+            <caption><p className="text-2xl font-[500] text-slate-600 dark:text-slate-400 text-center mb-2">
+            {item.title}
+          </p></caption>
+            <tbody>
+              <tr className="text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Younger Bother</td>
+                <td className="p-1">{item.youngerBother1}</td>
+              </tr>
+              <tr className=" text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Education</td>
+                <td className="p-1">{item.education1}</td>
+              </tr>
+              <tr className="text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Younger Bother</td>
+                <td className="p-1">{item.youngerBother2}</td>
+              </tr>
+              <tr className=" text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Education</td>
+                <td className="p-1">{item.education2}</td>
+              </tr>
+              
+              <tr className="text-slate-500 dark:text-slate-300">
+                <td className="p-1 font-medium">Occupation</td>
+                <td className="p-1">{item.occupation}</td>
+              </tr>
+              
+            </tbody>
+          </table>
+
           
         </div>
       );
