@@ -14,6 +14,7 @@ import {
   SocialMedia,
 } from "../../pages";
 import Breadcrumbs from "../breadcrumbs/Breadcrumbs";
+import Error404 from "../../pages/Error404";
 
 const Layout = () => {
   const isHomePage = useLocation();
@@ -41,6 +42,7 @@ const Layout = () => {
             <Route path="/JobInfo" element={<JobInfo />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/social-media" element={<SocialMedia />} />
+            <Route path="*" element={<Error404 />} />
           </Routes>
         </div>
       </main>

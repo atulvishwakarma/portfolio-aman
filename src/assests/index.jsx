@@ -5,4 +5,5 @@ import biodata from './biodata.jpeg'
 import itcInfoTechLogo from './ITC_Infotech_Logo.jpg'
 import placeholderImg from './placeholder-image.webp'
 import imageComingSoon from './Image-Coming-Soon.png'
-export { patternLines, vivaMagenta,amanprofile,biodata,itcInfoTechLogo ,placeholderImg,imageComingSoon};
+import error404 from './something-lost.png'
+export { patternLines, vivaMagenta,amanprofile,biodata,itcInfoTechLogo ,placeholderImg,imageComingSoon,error404};
