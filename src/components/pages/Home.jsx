@@ -1,14 +1,15 @@
-import React from "react";
 import { amanprofile } from "../../assests";
-
 import { Link } from "react-router-dom";
-import { menuLink } from "../utils/MainLink";
+import { menuLink } from "../data";
 
 function Home() {
   const hLink = menuLink.map((item) => {
     const Icon = item.iconName;
     return (
-      <div className="row-span-2 profile-links--link  items-center justify-center bg-white dark:bg-slate-700   hover:shadow-xl dark:hover:shadow-xl dark:hover:bg-slate-600 cursor-pointer transform transition duration-500  text-pink-500 w-full rounded" key={item.id}>
+      <div
+        className="row-span-2 profile-links--link  items-center justify-center bg-white dark:bg-slate-700   hover:shadow-xl dark:hover:shadow-xl dark:hover:bg-slate-600 cursor-pointer transform transition duration-500  text-pink-500 w-full rounded"
+        key={item.id}
+      >
         <Link
           to={item.url}
           className="no-underline  flex justify-center items-center flex-col h-full p-4 min-w-[235px]"

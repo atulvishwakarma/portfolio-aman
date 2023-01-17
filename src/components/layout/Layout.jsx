@@ -18,17 +18,20 @@ import Breadcrumbs from "../breadcrumbs/Breadcrumbs";
 const Layout = () => {
   const isHomePage = useLocation();
   var isHome = false;
-if(isHomePage.pathname !=='/'){
-  isHome = true;
-}
-console.log(isHome);
+  if (isHomePage.pathname !== "/") {
+    isHome = true;
+  }
   return (
     <>
       <Header />
 
       <main className="main w-full">
         {isHome && <Breadcrumbs />}
-        <div className={`main-wrapper main flex flex-col w-full justify-center ${isHome?"min-h-[calc(100vh-234px)]":"min-h-[calc(100vh-182px)]"}  pb-4`}>
+        <div
+          className={`main-wrapper main flex flex-col w-full justify-center ${
+            isHome ? "min-h-[calc(100vh-234px)]" : "min-h-[calc(100vh-182px)]"
+          }  pb-4`}
+        >
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="address" element={<Address />} />

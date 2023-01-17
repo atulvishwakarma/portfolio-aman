@@ -15,7 +15,7 @@ export const SocialMediaData = [
   {
     id: 103,
     name: "Whatsapp",
-    profileurl: "https://web.whatsapp.com/",
+    profileurl: "https://wa.me/919131557019",
     icon: RiWhatsappLine,
   },
 ];

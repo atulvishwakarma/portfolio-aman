@@ -1,8 +1,6 @@
-import React from "react";
-import { userInfo } from "../utils/UserInfo";
 import { amanprofile, biodata } from "../../assests";
 import ProfileBioBlock from "../utils/ProfileBioBlock";
-import { BioData, parentInfo, siblingInfo } from "../data";
+import { BioData, parentInfo, siblingInfo, userInfo } from "../data";
 
 import { MdOutlineCloudDownload } from "react-icons/md";
 const userName = userInfo.map((item) => item.name);

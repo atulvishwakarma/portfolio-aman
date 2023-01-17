@@ -1,9 +1,6 @@
-import { ImProfile } from "react-icons/im";
-import { FaLaptopCode } from "react-icons/fa";
-import { TbSocial } from "react-icons/tb";
-import { TiContacts } from "react-icons/ti";
-import { FcHome } from "react-icons/fc";
-import {MdPhotoLibrary,MdBusiness} from 'react-icons/md'
+
+import {ImProfile,FaLaptopCode,TbSocial,TiContacts,FcHome,MdPhotoLibrary,MdBusiness} from '../icons'
+
 export const menuLink = [
   {
     id: 101,

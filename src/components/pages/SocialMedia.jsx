@@ -5,7 +5,7 @@ const socialData = SocialMediaData.map((item) => {
   return (
     <div
       key={item.id}
-      className="social-media--items-item p-4 transition-all ease-in-out hover:shadow-md rounded  dark:hover:shadow-2xl"
+      className="social-media--items-item p-4 transition-all ease-in-out rounded  hover:shadow-2xl dark:hover:bg-slate-500"
     >
       <a
         href={item.profileurl}
@@ -13,8 +13,8 @@ const socialData = SocialMediaData.map((item) => {
         rel="noreferrer"
         className="text-3xl text-white"
       >
-        <Icon className="mx-auto mb-4 text-pink-500" />
-        <p className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+        <Icon className="mx-auto mb-4 text-slate-600 dark:text-white" />
+        <p className="text-slate-600 dark:text-white">
           {item.name}
         </p>
       </a>

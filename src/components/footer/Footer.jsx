@@ -1,6 +1,4 @@
-import React from "react";
-import { FcHome } from "react-icons/fc";
-import { MdPhotoLibrary, MdBusiness } from "react-icons/md";
+import { MdPhotoLibrary, MdBusiness, FaHome } from "../icons";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
@@ -38,7 +36,7 @@ const Footer = () => {
                 <div className="text-center space-y-2 sm:text-center text-slate-600 dark:text-white">
                   <div className="space-y-0.5">
                     <Link to="address" className="no-underline text-inherit">
-                      <FcHome className="text-center mx-auto  text-4xl" />
+                      <FaHome className="text-center mx-auto  text-4xl" />
                       <p className="text-lg  font-semibold">Address</p>
                     </Link>
                   </div>

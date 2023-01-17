@@ -1,3 +1,4 @@
 import { BioData, parentInfo, siblingInfo } from "./UserBioData";
-
-export { BioData, parentInfo, siblingInfo };
+import { userInfo } from "./UserInfo";
+import { menuLink,extraMenu } from "./MainLink";
+export { BioData, parentInfo, siblingInfo, userInfo, menuLink,extraMenu };
