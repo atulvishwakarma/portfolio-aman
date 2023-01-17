@@ -27,8 +27,8 @@ function Home() {
   return (
     <div className="home">
       <div className="home-wrapper container max-w-full px-4">
-        <div class="grid grid-flow-row lg:grid-flow-col gap-8 lg:gap-4">
-          <div class="row-span-4 auto-cols-fr">
+        <div className="grid grid-flow-row lg:grid-flow-col gap-8 lg:gap-4">
+          <div className="row-span-4 auto-cols-fr">
             <div className="profile flex flex-col items-center justify-center max-w-full">
               <img
                 loading="lazy"

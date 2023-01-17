@@ -42,7 +42,7 @@ const Layout = () => {
             <Route path="/JobInfo" element={<JobInfo />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/social-media" element={<SocialMedia />} />
-            <Route path="*" element={<Error404 />} />
+            <Route path="/*" element={<Error404 />} />
           </Routes>
         </div>
       </main>

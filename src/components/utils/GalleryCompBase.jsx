@@ -65,3 +65,4 @@ const GalleryCompBase = (props) => {
 };
 
 export default GalleryCompBase;
+

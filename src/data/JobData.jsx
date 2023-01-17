@@ -12,7 +12,7 @@ export const JobData = [
     companyLogo: itcInfoTechLogo,
   },
   {
-    id: 1100,
+    id: 1101,
     companyName: "Mobile Tech Online Services Pvt.Ltd",
     duration: "2015 - 2017",
     jobPosition: "Sr. Software Engineer",

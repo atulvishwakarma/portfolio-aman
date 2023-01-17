@@ -1,8 +1,7 @@
 const JobInfoList = ({ jobInfoData }) => {
-  console.log(jobInfoData);
   const jobInfo = jobInfoData.map((data) => {
     return (
-      <div className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 mb-4">
+      <div key={data.id} className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 mb-4">
         <img
           className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
           src={data.companyLogo}

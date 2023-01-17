@@ -1,5 +1,5 @@
 
-import {ImProfile,FaLaptopCode,TbSocial,TiContacts,FcHome,MdPhotoLibrary,MdBusiness} from '../icons'
+import {ImProfile,FaLaptopCode,TbSocial,TiContacts,MdPhotoLibrary,MdBusiness,FaHome} from '../icons'
 
 export const menuLink = [
   {
@@ -44,7 +44,7 @@ export const extraMenu = [
   ,{
     id:203,
     name:'Address',
-    iconName:FcHome,
+    iconName:FaHome,
     url:'/address'
   }
 ]
