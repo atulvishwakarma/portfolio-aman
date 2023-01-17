@@ -2,7 +2,7 @@ import { itcInfoTechLogo, imageComingSoon } from "../assests";
 export const JobData = [
   {
     id: 1100,
-    companyName: "ICT Infotech",
+    companyName: "ITC Infotech",
     duration: "Since 2019 - Current",
     jobPosition: "Sr. Software Engineer",
     technology: "Android",
