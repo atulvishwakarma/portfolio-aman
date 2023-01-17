@@ -1,4 +1,4 @@
-import { amanprofile } from "../../assests";
+import { amanprofile } from "../assests";
 import { MdContactPhone, MdEmail, FaMapMarkerAlt, BsMailbox2 } from "../icons";
 const Address = () => {
   return (
@@ -13,7 +13,7 @@ const Address = () => {
             />
           </div>
           <div className="address-content md:max-w-md md:mx-auto mt-4">
-            <address>
+            <address className=" not-italic">
               <p className="text-3xl text-slate-600 dark:text-slate-400 font-[500] text-center">
                 Address
               </p>

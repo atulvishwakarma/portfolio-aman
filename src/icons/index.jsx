@@ -6,7 +6,7 @@ import {
   MdPhotoLibrary,
   MdBusiness,
 } from "react-icons/md";
-import { FcHome } from "react-icons/fc";
+import { FcHome,FcOvertime } from "react-icons/fc";
 import { FiInstagram } from "react-icons/fi";
 import { RiWhatsappLine, RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 import { FaMapMarkerAlt, FaHome,FaLaptopCode } from "react-icons/fa";
@@ -34,4 +34,5 @@ export {
   ImProfile,
   TbSocial,
   TiContacts,
+  FcOvertime,
 };

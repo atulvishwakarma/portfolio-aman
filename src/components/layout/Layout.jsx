@@ -12,7 +12,7 @@ import {
   JobInfo,
   Profile,
   SocialMedia,
-} from "../pages";
+} from "../../pages";
 import Breadcrumbs from "../breadcrumbs/Breadcrumbs";
 
 const Layout = () => {
@@ -34,13 +34,13 @@ const Layout = () => {
         >
           <Routes>
             <Route path="/" exact element={<Home />} />
-            <Route path="address" element={<Address />} />
-            <Route path="business" element={<Business />} />
+            <Route path="/address" element={<Address />} />
+            <Route path="/business" element={<Business />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="gallery" element={<Gallery />} />
-            <Route path="JobInfo" element={<JobInfo />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/JobInfo" element={<JobInfo />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="social-media" element={<SocialMedia />} />
+            <Route path="/social-media" element={<SocialMedia />} />
           </Routes>
         </div>
       </main>

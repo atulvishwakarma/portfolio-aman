@@ -1,14 +1,14 @@
-import { amanprofile, biodata } from "../../assests";
-import ProfileBioBlock from "../utils/ProfileBioBlock";
+import { amanprofile, biodata } from "../assests";
+import ProfileBioBlock from "../components/utils/ProfileBioBlock";
 import { BioData, parentInfo, siblingInfo, userInfo } from "../data";
 
 import { MdOutlineCloudDownload } from "react-icons/md";
 const userName = userInfo.map((item) => item.name);
 const Profile = () => {
   return (
-    <div className="profile-page">
-      <div className="profile-wrapper container max-w-full px-4 relative">
-        <div className="download-biodata absolute right-4 top-0 ">
+    <div className="profile-page relative">
+      <div className="profile-wrapper container max-w-full px-4 ">
+        <div className="download-biodata absolute right-4 -top-11 ">
           <a
             download={`amanrai-biodata.jpeg`}
             href={biodata}

@@ -1,5 +1,5 @@
-import { amanprofile } from "../../assests";
-import { SocialMediaData } from "../data/SocialMediaData";
+import { amanprofile } from "../assests";
+import { SocialMediaData } from "../data";
 const socialData = SocialMediaData.map((item) => {
   const Icon = item.icon;
   return (
@@ -11,12 +11,10 @@ const socialData = SocialMediaData.map((item) => {
         href={item.profileurl}
         target="_blank"
         rel="noreferrer"
-        className="text-3xl text-white"
+        className="text-2xl no-underline text-slate-500 dark:text-slate-300"
       >
-        <Icon className="mx-auto mb-4 text-slate-600 dark:text-white" />
-        <p className="text-slate-600 dark:text-white">
-          {item.name}
-        </p>
+        <Icon className="mx-auto mb-4 text-4xl text-slate-600 dark:text-slate-400" />
+        <p>{item.name}</p>
       </a>
     </div>
   );

@@ -1,4 +1,4 @@
-import { amanprofile } from "../../assests";
+import { amanprofile } from "../assests";
 import { Link } from "react-router-dom";
 import { menuLink } from "../data";
 

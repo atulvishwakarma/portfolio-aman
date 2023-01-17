@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { RiMenu4Fill, RiCloseFill } from "../icons";
+import { RiMenu4Fill, RiCloseFill } from "../../icons";
 
 import { Link } from "react-router-dom";
-import { userInfo,menuLink,extraMenu } from "../data";
+import { userInfo,menuLink,extraMenu } from "../../data";
 import DarkMode from "../thememode/DarkMode";
 
 const userName = userInfo.map((item) => item.name);
