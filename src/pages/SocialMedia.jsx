@@ -24,7 +24,7 @@ const SocialMedia = () => {
     <div className="social-media">
       <div className="social-media-wrapper container max-w-full mx-auto px-4">
         <div className="social-media-content">
-          <div className="md:flex font-sans shadow rounded max-w-screen-lg mx-auto dark:bg-slate-700">
+          <div className="md:flex font-sans shadow rounded max-w-screen-lg mx-auto bg-white dark:bg-slate-700">
             <div className="flex-none w-60 relative mx-auto md:mx-0">
               <img
                 src={amanprofile}

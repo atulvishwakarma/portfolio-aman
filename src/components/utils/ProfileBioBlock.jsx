@@ -46,7 +46,7 @@ const ProfileBioBlock = ({ className, data }) => {
               </tr>
               <tr className="text-slate-500 dark:text-slate-300">
                 <td className="p-1 font-medium">Technology</td>
-                <td className="p-1">{item.Technology}</td>
+                <td className="p-1">{item.technology}</td>
               </tr>
               <tr className="text-slate-500 dark:text-slate-300">
                 <td className="p-1 font-medium">Company</td>

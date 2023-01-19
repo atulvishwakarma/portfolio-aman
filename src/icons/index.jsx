@@ -12,7 +12,7 @@ import { RiWhatsappLine, RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 import { FaMapMarkerAlt, FaHome,FaLaptopCode } from "react-icons/fa";
 import { BsMailbox2 } from "react-icons/bs";
 import { ImProfile } from "react-icons/im";
-import { TbSocial } from "react-icons/tb";
+import { TbSocial, TbWorld } from "react-icons/tb";
 import { TiContacts } from "react-icons/ti";
 
 export {
@@ -33,6 +33,7 @@ export {
   BsMailbox2,
   ImProfile,
   TbSocial,
+  TbWorld,
   TiContacts,
   FcOvertime,
 };

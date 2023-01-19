@@ -9,7 +9,7 @@ export const BioData = [
     gotra: "Phuhar",
     education: "B.E(CSE)",
     occupation: "Sr. Software Engineer",
-    Technology: "Sr. Android Application Developer",
+    technology: "Sr. Android Developer",
     company: "ITC infotech,Bangalore",
   },
 ];
