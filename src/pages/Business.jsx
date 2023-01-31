@@ -1,4 +1,5 @@
 import { amanprofile } from "../assests";
+import {businessImg} from '../assests/business'
 import {
   MdContactPhone,
   MdEmail,
@@ -10,7 +11,7 @@ import {
   FiInstagram,
   RiWhatsappLine,
 } from "../icons";
-import GalleryCompBase from "../components/utils/GalleryCompBase";
+import GalleryComp from "../components/utils/GalleryComp";
 const Business = () => {
   return (
     <div className="business-page">
@@ -171,7 +172,8 @@ const Business = () => {
           
           </div>
         <div className="gallery-wrapper max-w-4xl mx-auto">
-          <GalleryCompBase />
+          {/* <GalleryCompBase /> */}
+          <GalleryComp galleryData={businessImg} />
         </div>
 
       </div>

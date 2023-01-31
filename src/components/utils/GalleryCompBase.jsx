@@ -17,6 +17,8 @@ const GalleryCompBase = (props) => {
             alt="img_111"
             loading="lazy"
             className="rounded-lg"
+            width="278"
+          height="278"
           />
         </div>
         <div className="transition-all scale-100 ease-in-out hover:scale-105">
