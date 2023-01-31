@@ -17,9 +17,5 @@ export const amanImg = [
   FB_IMG_13,
   FB_IMG_14,
   FB_IMG_15,
-  
-  
-  
   FB_IMG_19,
-  FB_IMG_20,
 ];
